@@ -60,6 +60,6 @@ function checkPassword(password, hashedValue){
     })
 }
 
-app.listen(8080, "0.0.0.0", function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log("server running");
 });
